@@ -61,9 +61,9 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 public void Multi1v1_OnRoundTypesAdded()
 {
 	if(GetConVarBool(gh_Ranked))
-		Multi1v1_AddRoundType("Headshot", "headshot", HeadshotHandler, true, true, "HeadshotOnly", true);
+		Multi1v1_AddRoundType("Headshot Only", "headshot", HeadshotHandler, true, true, "HeadshotOnly", true);
 	else
-		Multi1v1_AddRoundType("Headshot", "headshot", HeadshotHandler, true, false, "", true);
+		Multi1v1_AddRoundType("Headshot Only", "headshot", HeadshotHandler, true, false, "", true);
 }
 
 public void HeadshotHandler(int client)
