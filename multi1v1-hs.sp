@@ -81,7 +81,7 @@ public void HeadshotHandler(int client)
 	g_bHeadShot[client] = true;
 
 	if(GetConVarBool(gh_MessageLoc))
-		PrintHintText(client, "<font color='#8b0000'>This is a headshot only round!</font>");
+		PrintHintText(client, "This is a headshot only round!");
 	else
 		CPrintToChat(client, "{darkred}This is a headshot only round!");
 }
